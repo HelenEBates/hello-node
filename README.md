@@ -5,3 +5,7 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/develo
 Using nvm to manage Express_Nodejs
 
 Using node v16.18.1
+
+TODO
+- add a virtual environment, perhaps Docker
+- look at test libraries so we can test / do TDD

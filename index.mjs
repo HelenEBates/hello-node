@@ -1,4 +1,5 @@
-// index.js handles the server and the express object is exposesd here
+import { counter } from './javascript/counter.mjs';
+import { daysTillChristmas } from './javascript/daysTillChristmas.mjs'
 import express from 'express'
 const app = express();
 const port = 8000;
@@ -9,9 +10,7 @@ import { engine } from 'express-handlebars'
 app.engine('handlebars', engine({
   defaultLayout: 'main',
   helpers: {
-      counter: (age) => age + 1,
-      character: () => "Sheep",
-      loud: (aString) => aString.toUpperCase()
+    daysTillChristmas: daysTillChristmas
     }
 }));
 app.set('view engine', 'handlebars')
